@@ -20,3 +20,5 @@ file = open(filename,"r")
 
 for row in file:
     print(row)
+    print(row.split(','))
+    print(type(row))
