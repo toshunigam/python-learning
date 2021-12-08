@@ -19,6 +19,6 @@ with open(filename,"w") as csvfile:
 file = open(filename,"r")
 
 for row in file:
-    print(row)
-    print(row.split(','))
-    print(type(row))
+    print(row.split(',')) #split string by comma and convert it into array
+
+file.close()
