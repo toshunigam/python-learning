@@ -2,7 +2,7 @@
 counter = 0
 flowerlist = []
 while(counter<5):
-    flowerlist.append(raw_input('Enter flower:'))
+    flowerlist.append(input('Enter flower:'))
     counter = counter + 1
 
 flowerlist.sort()

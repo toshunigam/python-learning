@@ -10,10 +10,10 @@ class Student:
         Student.student_count += 1
         return
     def display_student(self):
-        print self.name, self.age, self.stream
+        print(self.name, self.age, self.stream)
         return
     def display_studentcount(self):
-        print "Student Count is:",self.student_count
+        print("Student Count is:",self.student_count)
         return
 stdnt1 = Student("Toshu",34,"IT")
 stdnt2 = Student("Indra",35,"CS")

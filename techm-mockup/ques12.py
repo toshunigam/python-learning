@@ -3,6 +3,6 @@ def calculate_score(name, *score):
     total_score=0
     for i in score:
         total_score +=i
-    print "Hi",name, "your total score is",total_score
+    print("Hi",name, "your total score is",total_score)
     return
 calculate_score("Toshu",67,78,89,90,95)

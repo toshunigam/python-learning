@@ -8,7 +8,7 @@ class Student:
         self.course = course
         return
     def display_student_details(self):
-        print self.name, self.age, self.course
+        print(self.name, self.age, self.course)
         return
 class Employee:
     eid=None
@@ -18,7 +18,7 @@ class Employee:
         self.designation = designation
         return
     def display_employee_details(self):
-        print self.eid, self.designation
+        print(self.eid, self.designation)
         return
 class Person(Student,Employee):
     name=None
@@ -36,7 +36,7 @@ class Person(Student,Employee):
         Employee(eid, designation)
         return
     def display_person_details(self):
-        print self.name, self.age, self.course, self.eid, self.designation
+        print(self.name, self.age, self.course, self.eid, self.designation)
         return
 person1 = Person('Toshu',34,"Python",795345,'tech lead')
 person1.display_person_details()
