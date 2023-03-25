@@ -19,7 +19,7 @@ soup = BeautifulSoup(r.content, 'html.parser')
 # print(soup.title)
 # print(soup.title.name)
 
-s = soup.find('div', class_="vp__address")
+s = soup.find('div', class_="vp__address__container")
 
 content = s.find_all('p')
  
