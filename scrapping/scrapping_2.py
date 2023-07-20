@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
  
 # Making a GET request
-r = requests.get('https://ayanshtechnology.com/contact.html')
+r = requests.get('https://ayanshtechnology.com/index.html')
  
 # check status code for response received
 # success code - 200
@@ -19,8 +19,8 @@ soup = BeautifulSoup(r.content, 'html.parser')
 # print(soup.title)
 # print(soup.title.name)
 
-s = soup.find('div', class_="vp__address__container")
-
+s = soup.find('p', class_="lead")
+# print(s)
 content = s.find_all('p')
 print('Hi there')
 for line in content:
