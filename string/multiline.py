@@ -16,3 +16,8 @@ mujhe neend ab na aye meri jaan
 chali na jaye
 '''
 print(c)
+# format example
+d='{0}, {1}, {2}'
+print(d.format('p','q','r'))
+d='{0}, {1}, {2}, {2}'
+print(d.format('p','q','r'))
