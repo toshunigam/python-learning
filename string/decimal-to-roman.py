@@ -1,2 +1,23 @@
-symbol=['I', 'IV', 'V', 'IX', 'X', 'XL', 'L', 'XC', 'C', 'CD', 'D', 'CM', 'M']
-value=[1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000]
+ls=[1000,900,500,400,100,90,50,40,10,9,5,4,1]
+dict={1:"I",4:"IV",5:"V",9:"IX",10:"X",40:"XL",50:"L",90:"XC",100:"C",400:"CD",500:"D",900:"CM",1000:"M"}
+ls2=[]
+# Function to convert decimal to Roman Numerals
+def func(no,res):
+    for i in range(0,len(ls)):
+        if no in ls:
+            res=dict[no]
+            rem=0
+            break
+        if ls[i]<no:
+            quo=no//ls[i]
+            rem=no%ls[i]
+            res=res+dict[ls[i]]*quo
+            break
+    ls2.append(res)
+    if rem==0:
+        pass
+    else:
+        func(rem,"")
+
+func(99,"")
+print("".join(ls2))
