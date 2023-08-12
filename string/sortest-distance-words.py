@@ -1,5 +1,5 @@
-S = [ "the", "quick", "brown", "fox", "quick" ]
-word1 = "the"; word2 = "brown"
+S = [ "my", "name", "is", "bali", "sun", "jara", "man", "manchali" ]
+word1 = "my"; word2 = "man"
 d1=-1
 d2=-1
 ans=100000
